@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3697a2ef-c363-4bd2-abae-5e81355c90b6" name="Default Changelist" comment="" />
+    <list default="true" id="3697a2ef-c363-4bd2-abae-5e81355c90b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddProductDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/AddProductDialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminHome.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdminHome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/ProductManagement_new.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/ProductManagement_new.db" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,18 +29,32 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ProductManagement" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="ProductManagement_new" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PATH_TO_GIT" value="E:\Soft\Git\Git\bin\git.exe" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/AddProductDialog.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/UI/SelectProductBatchView.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="G:\Work\Product_Management_System\.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1avyjyDwkAlhDCRoZy654JGyH2U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -43,11 +65,62 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="F:/WorkPlace/Git_Workplace" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Work\Product_Management_System\UI" />
+      <recent name="G:\Work\Product_Management_System" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.MainWindow">
+    <configuration name="AddProductBatchDetailView" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Product_Management_System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/AddProductBatchDetailView.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AdminHome" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Product_Management_System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdminHome.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="MainWindow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Product_Management_System" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,9 +143,79 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="SelectProductBatchView (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Product_Management_System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/SelectProductBatchView.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SelectProductBatchView" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Product_Management_System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="G:\Work\Product_Management_System\UI\SelectProductBatchView.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="searchProductBatchDetailView" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Product_Management_System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/searchProductBatchDetailView.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.MainWindow" />
+        <item itemvalue="Python.searchProductBatchDetailView" />
+        <item itemvalue="Python.AddProductBatchDetailView" />
+        <item itemvalue="Python.SelectProductBatchView (1)" />
+        <item itemvalue="Python.AdminHome" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +248,24 @@
       <workItem from="1587911186434" duration="3390000" />
       <workItem from="1587976834508" duration="842000" />
       <workItem from="1587977687688" duration="1491000" />
-      <workItem from="1588238114588" duration="279000" />
+      <workItem from="1588238114588" duration="855000" />
+      <workItem from="1588329456339" duration="835000" />
+      <workItem from="1588410767530" duration="1935000" />
+      <workItem from="1588489737913" duration="1067000" />
+      <workItem from="1588490922871" duration="12027000" />
+      <workItem from="1588572503349" duration="5393000" />
+      <workItem from="1588661585648" duration="946000" />
+      <workItem from="1588835025207" duration="5255000" />
+      <workItem from="1588903976255" duration="19000" />
+      <workItem from="1588919130665" duration="6986000" />
+      <workItem from="1589021407508" duration="8559000" />
+      <workItem from="1589106197079" duration="4593000" />
+      <workItem from="1589177958104" duration="40000" />
+      <workItem from="1589184534243" duration="11073000" />
+      <workItem from="1589254340142" duration="18000" />
+      <workItem from="1589279324830" duration="7952000" />
+      <workItem from="1589294718643" duration="2457000" />
+      <workItem from="1589336154813" duration="14126000" />
     </task>
     <servers />
   </component>
@@ -113,61 +273,150 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Notifications" timestamp="1587979242932">
+    <state x="361" y="71" key="#Notifications" timestamp="1588490964533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Notifications/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1587979242932" />
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587632124082">
+    <state x="361" y="71" key="#Notifications/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1588490964533" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588491057026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1588491057026" />
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587632124082" />
+    <state x="474" y="202" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588921980785">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="474" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1588921980785" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589022650176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589022650176" />
     <state x="2210" y="197" width="469" height="516" key="#com.intellij.tools.ToolEditorDialog" timestamp="1587915355353">
       <screen x="1920" y="0" width="1024" height="728" />
     </state>
     <state x="2210" y="197" width="469" height="516" key="#com.intellij.tools.ToolEditorDialog/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1587915355353" />
-    <state x="2286" y="147" key="FileChooserDialogImpl" timestamp="1588238434432">
-      <screen x="1920" y="0" width="1024" height="728" />
+    <state x="370" y="0" key="CommitChangelistDialog2" timestamp="1588410842831">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1587977042549" />
+    <state x="370" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1588410842831" />
+    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1589177986622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589177986622" />
     <state x="2286" y="147" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1588238434432" />
-    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587712895197" />
-    <state width="981" height="157" key="GridCell.Tab.0.bottom" timestamp="1587915368523">
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588329498396" />
+    <state x="2245" y="254" key="Github.ShareDialog" timestamp="1588238634153">
       <screen x="1920" y="0" width="1024" height="728" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1587911941460" />
+    <state x="2245" y="254" key="Github.ShareDialog/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1588238634153" />
+    <state x="2234" y="0" key="Github.UntrackedFilesDialog" timestamp="1588238641687">
+      <screen x="1920" y="0" width="1024" height="728" />
+    </state>
+    <state x="2234" y="0" key="Github.UntrackedFilesDialog/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1588238641687" />
+    <state width="1493" height="137" key="GridCell.Tab.0.bottom" timestamp="1589367254574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589367254574" />
     <state width="981" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1587915368523" />
-    <state width="1493" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587640841852" />
-    <state width="981" height="157" key="GridCell.Tab.0.center" timestamp="1587915368522">
-      <screen x="1920" y="0" width="1024" height="728" />
+    <state width="1493" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589297177142" />
+    <state width="1493" height="137" key="GridCell.Tab.0.center" timestamp="1589367254574">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1587911941460" />
+    <state width="1493" height="137" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589367254574" />
     <state width="981" height="157" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1587915368522" />
-    <state width="1493" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587640841852" />
-    <state width="981" height="157" key="GridCell.Tab.0.left" timestamp="1587915368522">
-      <screen x="1920" y="0" width="1024" height="728" />
+    <state width="1493" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589297177142" />
+    <state width="1493" height="137" key="GridCell.Tab.0.left" timestamp="1589367254573">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1587911941460" />
+    <state width="1493" height="137" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589367254573" />
     <state width="981" height="157" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1587915368522" />
-    <state width="1493" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587640841852" />
-    <state width="981" height="157" key="GridCell.Tab.0.right" timestamp="1587915368523">
-      <screen x="1920" y="0" width="1024" height="728" />
+    <state width="1493" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589297177142" />
+    <state width="1493" height="137" key="GridCell.Tab.0.right" timestamp="1589367254574">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="189" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1587911941460" />
+    <state width="1493" height="137" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589367254574" />
     <state width="981" height="157" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1587915368523" />
-    <state width="1493" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587640841852" />
-    <state width="212" height="539" key="HiddenNamespacesPopup" timestamp="1587979213131">
+    <state width="1493" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589297177142" />
+    <state width="1493" height="242" key="GridCell.Tab.1.bottom" timestamp="1589344222206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="212" height="539" key="HiddenNamespacesPopup/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1587979213131" />
+    <state width="1493" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589344222206" />
+    <state width="1493" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589297177143" />
+    <state width="1493" height="242" key="GridCell.Tab.1.center" timestamp="1589344222206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589344222206" />
+    <state width="1493" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589297177143" />
+    <state width="1493" height="242" key="GridCell.Tab.1.left" timestamp="1589344222206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589344222206" />
+    <state width="1493" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589297177142" />
+    <state width="1493" height="242" key="GridCell.Tab.1.right" timestamp="1589344222206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="242" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589344222206" />
+    <state width="1493" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589297177143" />
+    <state width="212" height="539" key="HiddenNamespacesPopup" timestamp="1589202279589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="212" height="539" key="HiddenNamespacesPopup/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589202279589" />
     <state width="212" height="539" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1587632140060" />
-    <state x="288" y="13" width="1248" height="811" key="SettingsEditor" timestamp="1588238189828">
+    <state x="308" y="22" width="1248" height="811" key="SettingsEditor" timestamp="1588490909748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="308" y="22" key="SettingsEditor/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1587979180412" />
+    <state x="308" y="22" key="SettingsEditor/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1588490909748" />
     <state x="288" y="13" width="1248" height="811" key="SettingsEditor/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1588238189828" />
     <state x="308" y="22" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587631536200" />
+    <state x="316" y="67" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589296590672">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="316" y="67" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589288836744" />
+    <state x="316" y="67" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1589296590672" />
+    <state x="1913" y="-13" width="1040" height="621" maximized="true" key="dock-window-1" timestamp="1589201828572">
+      <screen x="1920" y="0" width="1024" height="728" />
+    </state>
+    <state x="1913" y="-13" width="1040" height="621" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1589201828572" />
+    <state x="-6" y="0" width="764" height="701" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1589120470823" />
+    <state x="-6" y="0" width="781" height="830" key="dock-window-2" timestamp="1589121587301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-6" y="0" width="781" height="830" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1589121587301" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589025433519">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1024.728@0.0.1536.824" timestamp="1588924956020" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589025433519" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UI/SelectProductBatchView.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UI/SelectProductBatchView.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Product_Management_System$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1587911876888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1589196200436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$MainUI.coverage" NAME="MainUI Coverage Results" MODIFIED="1588923672869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1588494822462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$AddProductBatchDetailView.coverage" NAME="AddProductBatchDetailView Coverage Results" MODIFIED="1589366469298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$AddProductDialog.coverage" NAME="AddProductDialog Coverage Results" MODIFIED="1589029091462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$ProductStorageViewer.coverage" NAME="ProductStorageViewer Coverage Results" MODIFIED="1589193838837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$test1__1_.coverage" NAME="test1 (1) Coverage Results" MODIFIED="1589199768352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$ProductStorageViewer2.coverage" NAME="ProductStorageViewer2 Coverage Results" MODIFIED="1589187970447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1589367254568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$AdminHome.coverage" NAME="AdminHome Coverage Results" MODIFIED="1589366265781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$AddProductView.coverage" NAME="AddProductView Coverage Results" MODIFIED="1589025252080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$test.coverage" NAME="test Coverage Results" MODIFIED="1589340845621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$searchProductBatchDetailView.coverage" NAME="searchProductBatchDetailView Coverage Results" MODIFIED="1589367000557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" />
+    <SUITE FILE_PATH="coverage/Product_Management_System$SelectProductBatchView__1_.coverage" NAME="SelectProductBatchView (1) Coverage Results" MODIFIED="1589366275479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" />
   </component>
 </project>

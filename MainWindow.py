@@ -49,8 +49,9 @@ class Main(QMainWindow):
         self.Menu.triggered[QAction].connect(self.menuTriggered)
 
         # Zgg 全屏
-        self.showFullScreen()
+        # self.showFullScreen()
         #self.showMaximized()
+        self.showMaximized()
 
     def adminSignIn(self):
         sip.delete(self.widget)

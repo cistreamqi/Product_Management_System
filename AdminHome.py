@@ -1,143 +1,112 @@
 import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+
 import qdarkstyle
-from AddProductDialog import AddProductDialog
-from DropProductDialog import DropProductDialog
-from ProductStorageViewer import ProductStorageViewer
-from UserManage import UserManage
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import QWidget
+from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QListWidgetItem
+from PyQt5.QtWidgets import QListWidget
+from PyQt5.QtWidgets import QHBoxLayout
+from PyQt5.QtWidgets import QStackedWidget
+
+from PyQt5.QtCore import QSize, Qt
+
+from UI.AddProductBatchDetailView import AddProductBatchDetailWidget
+from UI.SelectProductBatchView import SelectProductBatchWidget
+from Thread.SearchProductBatchThread import SearchProductBatchDetailThread
+
 
 class AdminHome(QWidget):
+    """登录后的主界面，该界面采用侧边栏+内容区相结合的方式"""
     def __init__(self):
-        super().__init__()
-        self.setUpUI()
-
-    def setUpUI(self):
+        super(AdminHome, self).__init__()
+        # 设置窗口大小和标题
         self.resize(900, 600)
         self.setWindowTitle("欢迎使用产品管理系统")
-        self.layout = QHBoxLayout()
-        self.buttonlayout = QVBoxLayout()
-        self.setLayout(self.layout)
+        # 导入QListWidget的qss样式
+        with open("./QListWidgetQSS.qss", 'r') as f:
+            self.list_style = f.read()
+        self.main_layout = QHBoxLayout(self)
+        self.main_layout.setContentsMargins(0, 0, 0, 0)
+        # 左侧选项表
+        self.left_widget = QListWidget()
+        self.left_widget.setStyleSheet(self.list_style)
+        self.main_layout.addWidget(self.left_widget)
+        # 右侧内容区
+        self.right_widget = QStackedWidget(self)
+        self.main_layout.addWidget(self.right_widget)
 
-        font = QFont()
-        font.setPixelSize(15)
-        self.userManageButton = QPushButton("用户管理")
-        self.addProductButton = QPushButton("添加产品")
-        self.dropProductButton = QPushButton("删除产品")
+        self.__setUpUI()
 
-        # Zgg
-        self.ruKuXinXiButton = QPushButton("入库信息管理")
-        self.chuKuXinXiButton = QPushButton("出库信息管理")
-        self.xinXiTongJiButton = QPushButton("信息统计")
-        self.weiBaoFangShiButton = QPushButton("维保方式管理")
-        self.weiBaoJiLuButton = QPushButton("维保记录管理")
-        self.guZhangZhenDuanButton = QPushButton("故障诊断与处理")
-        self.zhiShiKuButton = QPushButton("知识库管理")
+    def __setUpUI(self):
+        """加载界面UI"""
+        # list和右边窗口的index对应绑定
+        self.left_widget.currentRowChanged.connect(self.display)
+        # 去掉边框
+        self.left_widget.setFrameShape(QListWidget.NoFrame)
+        # 隐藏滚动条
+        self.left_widget.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.left_widget.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
 
-        self.userManageButton.setFont(font)
-        self.addProductButton.setFont(font)
-        self.dropProductButton.setFont(font)
-        # Zgg
-        self.ruKuXinXiButton.setFont(font)
-        self.chuKuXinXiButton.setFont(font)
-        self.xinXiTongJiButton.setFont(font)
-        self.weiBaoFangShiButton.setFont(font)
-        self.weiBaoJiLuButton.setFont(font)
-        self.guZhangZhenDuanButton.setFont(font)
-        self.zhiShiKuButton.setFont(font)
+        list_str = ['产品批次查询', '产品批次新建', '删除产品', '入库信息管理', '出库信息管理', '信息统计', '维护方式管理', '维护记录管理', '故障诊断与处理', '知识库管理', '用户管理']
+        # 根据list_str设置对应UI
+        url_list = ["self.setSelectProductBatchDetailView", "self.addProductBatchDetailView", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test"]
 
-        self.userManageButton.setFixedWidth(130)
-        self.userManageButton.setFixedHeight(40)
-        self.addProductButton.setFixedWidth(130)
-        self.addProductButton.setFixedHeight(40)
-        self.dropProductButton.setFixedWidth(130)
-        self.dropProductButton.setFixedHeight(40)
-
-        # Zgg
-        self.ruKuXinXiButton.setFixedWidth(130)
-        self.chuKuXinXiButton.setFixedWidth(130)
-        self.xinXiTongJiButton.setFixedWidth(130)
-        self.weiBaoFangShiButton.setFixedWidth(130)
-        self.weiBaoJiLuButton.setFixedWidth(130)
-        self.guZhangZhenDuanButton.setFixedWidth(130)
-        self.zhiShiKuButton.setFixedWidth(130)
-
-        self.ruKuXinXiButton.setFixedHeight(40)
-        self.chuKuXinXiButton.setFixedHeight(40)
-        self.xinXiTongJiButton.setFixedHeight(40)
-        self.weiBaoFangShiButton.setFixedHeight(40)
-        self.weiBaoJiLuButton.setFixedHeight(40)
-        self.guZhangZhenDuanButton.setFixedHeight(40)
-        self.zhiShiKuButton.setFixedHeight(40)
-
-        self.buttonlayout.addWidget(self.addProductButton)
-        self.buttonlayout.addWidget(self.dropProductButton)
-
-        self.buttonlayout.addWidget(self.ruKuXinXiButton)
-        self.buttonlayout.addWidget(self.chuKuXinXiButton)
-        self.buttonlayout.addWidget(self.xinXiTongJiButton)
-        self.buttonlayout.addWidget(self.weiBaoFangShiButton)
-        self.buttonlayout.addWidget(self.weiBaoJiLuButton)
-        self.buttonlayout.addWidget(self.guZhangZhenDuanButton)
-        self.buttonlayout.addWidget(self.zhiShiKuButton)
-
-        self.buttonlayout.addWidget(self.userManageButton)
-
-        self.layout.addLayout(self.buttonlayout)
-        self.storageView = ProductStorageViewer()
-        self.layout.addWidget(self.storageView)
-
-        self.addProductButton.clicked.connect(self.addProductButtonClicked)
-        self.dropProductButton.clicked.connect(self.dropProductButtonClicked)
-        self.userManageButton.clicked.connect(self.userManage)
-
-        self.userManageButton.clicked.connect(self.ruKuXinXiButtonClicked)
-        self.userManageButton.clicked.connect(self.chuKuXinXiButtonClicked)
-        self.userManageButton.clicked.connect(self.xinXiTongJiButtonClicked)
-        self.userManageButton.clicked.connect(self.weiBaoFangShiButtonClicked)
-        self.userManageButton.clicked.connect(self.weiBaoJiLuButtonClicked)
-        self.userManageButton.clicked.connect(self.guZhangZhenDuanButtonClicked)
-        self.userManageButton.clicked.connect(self.zhiShiKuButtonClicked)
+        for i in range(len(list_str)):
+            # 左侧选项的添加
+            self.item = QListWidgetItem(list_str[i], self.left_widget)
+            self.item.setSizeHint(QSize(30, 60))
+            self.item.setTextAlignment(Qt.AlignCenter)
+            # 根据对应函数设置右侧显示内容
+            eval(url_list[i] + "()")
 
 
-    def addProductButtonClicked(self):
-        addDialog = AddProductDialog(self)
-        #addDialog.add_Product_success_signal.connect(self.storageView.searchButtonClicked)
-        addDialog.show()
-        addDialog.exec_()
+    def display(self, i):
+        self.right_widget.setCurrentIndex(i)
 
-    def dropProductButtonClicked(self):
-        dropDialog = DropProductDialog(self)
-        #dropDialog.drop_Product_successful_signal.connect(self.storageView.searchButtonClicked)
-        dropDialog.show()
-        dropDialog.exec_()
+    def setRightWidget(self, layout):
+        """
+        设置右部QStackWidget中的内容
+        :param layout: 含有相应视图的右部布局
+        :return:
+        """
+        widget = QWidget()
+        widget.setLayout(layout)
+        self.right_widget.addWidget(widget)
 
-    def userManage(self):
-        UserDelete=UserManage(self)
-        UserDelete.show()
-        UserDelete.exec_()
+    def setRightWidget1(self, myWidget):
+        """
+        设置右部QStackWidget中的内容
+        :param layout: 含有相应视图的右部布局
+        :return:
+        """
+        widget = QWidget()
+        myWidget.setupUi(widget)
+        self.right_widget.addWidget(widget)
 
-    def ruKuXinXiButtonClicked(self):
+    def addProductBatchDetailView(self):
+        self.tt = AddProductBatchDetailWidget()
+        self.setRightWidget1(self.tt)
+
+    def setSelectProductBatchDetailView(self):
+        """设置产品批次查询的UI"""
+        self.myWidget = SelectProductBatchWidget()
+        self.table_thread = SearchProductBatchDetailThread()
+        self.table_thread.update_date.connect(self.updateSearchProductBatchDetailWidget)
+        self.table_thread.start()
+        self.setRightWidget1(self.myWidget)
+
+    def updateSearchProductBatchDetailWidget(self):
+        """
+        更新产品批次查询的视图
+        :return:
+        """
+        print(11111)
+        self.myWidget.queryModel.select()
+
+    def test(self):
         pass
 
-    def chuKuXinXiButtonClicked(self):
-        pass
-
-    def xinXiTongJiButtonClicked(self):
-        pass
-
-    def weiBaoFangShiButtonClicked(self):
-        pass
-
-    def weiBaoJiLuButtonClicked(self):
-        pass
-
-    def guZhangZhenDuanButtonClicked(self):
-        pass
-
-    def zhiShiKuButtonClicked(self):
-        pass
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -146,3 +115,5 @@ if __name__ == "__main__":
     mainMindow = AdminHome()
     mainMindow.show()
     sys.exit(app.exec_())
+
+
