@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Management" uuid="6b73d3cf-7dbc-4bba-b7a7-13cc0587fd92">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:G:\Work\Product_Management_System\db\Management.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="ProductManagement" uuid="06ae3c60-494b-4403-a834-90874a4859fe">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:G:\Work\Product_Management_System\db\ProductManagement.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="ProductManagement_new" uuid="7a982600-9e46-4f25-afe5-d4a6bba9cde6">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:G:\Work\Product_Management_System\db\ProductManagement_new.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

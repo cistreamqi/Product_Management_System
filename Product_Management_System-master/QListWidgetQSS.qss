@@ -1,0 +1,20 @@
+QListWidget, QListView, QTreeWidget, QTreeView {
+    outline: 0px;
+}
+
+QListWidget {
+    min-width: 120px;
+    max-width: 300px;
+    font-size: 18px;
+    /*color: Black;
+
+    background: #F5F5F5;*/
+}
+
+QListWidget::Item:selected {
+    /*background: lightGray;*/
+    border-left: 5px solid orange;
+}
+/*HistoryPanel:hover {
+    background: rgb(52, 52, 52);
+}*/
