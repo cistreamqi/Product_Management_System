@@ -11,9 +11,14 @@ from PyQt5.QtWidgets import QStackedWidget
 
 from PyQt5.QtCore import QSize, Qt
 
-from UI.AddProductBatchDetailView import AddProductBatchDetailWidget
-from UI.SelectProductBatchView import SelectProductBatchWidget
+from UI.AddProductView import AddProductWidget
+from UI.SearchProductBatchDetailView import SelectProductBatchDetailWidget
 from Thread.SearchProductBatchThread import SearchProductBatchDetailThread
+from UI.SearchProductComponentTypeView import SearchProductComponentTypeWidget
+from UI.SearchProductComponentView import SearchProductComponentWidget
+from UI.SearchProductView import SelectProductWidget
+from UI.KnowledgeBaseManage import KnowledgeBaseManage
+
 
 
 class AdminHome(QWidget):
@@ -35,6 +40,10 @@ class AdminHome(QWidget):
         # 右侧内容区
         self.right_widget = QStackedWidget(self)
         self.main_layout.addWidget(self.right_widget)
+        # 刷新查询批次界面
+        # self.table_thread = SearchProductBatchDetailThread()
+        # self.table_thread.update_date.connect(self.updateSearchProductBatchDetailWidget)
+        # self.table_thread.start()
 
         self.__setUpUI()
 
@@ -48,9 +57,9 @@ class AdminHome(QWidget):
         self.left_widget.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.left_widget.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
 
-        list_str = ['产品批次查询', '产品批次新建', '删除产品', '入库信息管理', '出库信息管理', '信息统计', '维护方式管理', '维护记录管理', '故障诊断与处理', '知识库管理', '用户管理']
+        list_str = ['产品批次查询', '产品信息新建', '产品组件查询', '组件类型查询', '出库信息管理', '信息统计', '维护方式管理', '维护记录管理', '故障诊断与处理', '知识库管理', '用户管理']
         # 根据list_str设置对应UI
-        url_list = ["self.setSelectProductBatchDetailView", "self.addProductBatchDetailView", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test"]
+        url_list = ["self.setSearchBatchView", "self.setSearchProductView", "self.setSearchProductConponentView", "self.setSearchProductConponentTypeView", "self.test", "self.test", "self.test", "self.test", "self.test", "self.test", "self.setKnowledgeBaseManageWidget", "self.test"]
 
         for i in range(len(list_str)):
             # 左侧选项的添加
@@ -62,7 +71,12 @@ class AdminHome(QWidget):
 
 
     def display(self, i):
+        # print(self.right_widget.widget(i))
+        # self.a.queryModel.update()
+        # self.b.queryModel.update()
+        # self.c.queryModel.update()
         self.right_widget.setCurrentIndex(i)
+
 
     def setRightWidget(self, layout):
         """
@@ -84,17 +98,38 @@ class AdminHome(QWidget):
         myWidget.setupUi(widget)
         self.right_widget.addWidget(widget)
 
-    def addProductBatchDetailView(self):
-        self.tt = AddProductBatchDetailWidget()
+    def addProductView(self):
+        """产品信息添加的UI"""
+        self.tt = AddProductWidget()
         self.setRightWidget1(self.tt)
 
-    def setSelectProductBatchDetailView(self):
+    def setSearchBatchView(self):
         """设置产品批次查询的UI"""
-        self.myWidget = SelectProductBatchWidget()
-        self.table_thread = SearchProductBatchDetailThread()
-        self.table_thread.update_date.connect(self.updateSearchProductBatchDetailWidget)
-        self.table_thread.start()
-        self.setRightWidget1(self.myWidget)
+        self.a = SelectProductBatchDetailWidget()
+        self.setRightWidget1(self.a)
+
+    def setSearchProductView(self):
+        """设置产品查询的UI"""
+        self.b = SelectProductWidget()
+        self.setRightWidget1(self.b)
+
+    def setSearchProductConponentTypeView(self):
+        """设置产品组件类型查询的UI"""
+        self.c = SearchProductComponentTypeWidget()
+        self.setRightWidget1(self.c)
+
+    def setSearchProductConponentView(self):
+        """设置产品组件查询的UI"""
+        self.d = SearchProductComponentWidget()
+        self.setRightWidget1(self.d)
+
+    def setKnowledgeBaseManageWidget(self):
+        """
+        czq 设置知识库管理UI
+        :return:
+        """
+        self.j=KnowledgeBaseManage()
+        self.setRightWidget1(self.j)
 
     def updateSearchProductBatchDetailWidget(self):
         """
@@ -102,7 +137,10 @@ class AdminHome(QWidget):
         :return:
         """
         print(11111)
-        self.myWidget.queryModel.select()
+        # self.myWidget.update()
+        self.myWidget.queryModel.update()
+
+
 
     def test(self):
         pass

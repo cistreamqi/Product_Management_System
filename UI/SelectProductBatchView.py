@@ -8,10 +8,11 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtSql import QSqlDatabase, QSqlTableModel
 from PyQt5.QtWidgets import QWidget, QApplication, QTableView, QHeaderView
 from Thread.SearchProductBatchThread import SearchProductBatchDetailThread
+from UI.MySearchBatchModel import MySearchTableModel
 
 
 class SelectProductBatchWidget(QWidget):
-
+    """暂时弃用"""
     def __init__(self):
         super(SelectProductBatchWidget, self).__init__()
         # self.setThread()
@@ -72,24 +73,24 @@ class SelectProductBatchWidget(QWidget):
         self.tableView = QTableView()
         self.tableView.horizontalHeader().setStretchLastSection(True)
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-
-        self.queryModel = QSqlTableModel()
-        self.queryModel.setTable("T_Product_BatchDetail")
+        headerRow = ["ID", "组件名称", "DisplayOrder", "创建人员ID", "创建时间", "修改人员ID", "修改时间", "备注"]
+        self.queryModel = MySearchTableModel("T_Product_ComponentType", headerRow)
+        # self.queryModel.setTable()
         # self.queryModel.setEditStrategy(QSqlTableModel.OnFieldChange)
-        self.queryModel.select()
+        # self.queryModel.select()
 
-        self.queryModel.setHeaderData(0, Qt.Horizontal, "ID")
-        self.queryModel.setHeaderData(1, Qt.Horizontal, "产品ID")
-        self.queryModel.setHeaderData(2, Qt.Horizontal, "批次号")
-        self.queryModel.setHeaderData(3, Qt.Horizontal, "交付日期")
-        self.queryModel.setHeaderData(4, Qt.Horizontal, "交付人员")
-        self.queryModel.setHeaderData(5, Qt.Horizontal, "接收单位")
-        self.queryModel.setHeaderData(6, Qt.Horizontal, "接收人员")
-        self.queryModel.setHeaderData(8, Qt.Horizontal, "创建人员ID")
-        self.queryModel.setHeaderData(9, Qt.Horizontal, "创建时间")
-        self.queryModel.setHeaderData(10, Qt.Horizontal, "修改人员ID")
-        self.queryModel.setHeaderData(11, Qt.Horizontal, "修改时间")
-        self.queryModel.setHeaderData(12, Qt.Horizontal, "备注")
+        # self.queryModel.setHeaderData(0, Qt.Horizontal, "ID")
+        # self.queryModel.setHeaderData(1, Qt.Horizontal, "产品ID")
+        # self.queryModel.setHeaderData(2, Qt.Horizontal, "批次号")
+        # self.queryModel.setHeaderData(3, Qt.Horizontal, "交付日期")
+        # self.queryModel.setHeaderData(4, Qt.Horizontal, "交付人员")
+        # self.queryModel.setHeaderData(5, Qt.Horizontal, "接收单位")
+        # self.queryModel.setHeaderData(6, Qt.Horizontal, "接收人员")
+        # self.queryModel.setHeaderData(8, Qt.Horizontal, "创建人员ID")
+        # self.queryModel.setHeaderData(9, Qt.Horizontal, "创建时间")
+        # self.queryModel.setHeaderData(10, Qt.Horizontal, "修改人员ID")
+        # self.queryModel.setHeaderData(11, Qt.Horizontal, "修改时间")
+        # self.queryModel.setHeaderData(12, Qt.Horizontal, "备注")
 
         self.tableView.setModel(self.queryModel)
         self.verticalLayout.addWidget(self.tableView)
